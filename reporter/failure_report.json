@@ -1,0 +1,117 @@
+{
+  "report_id": "deploymate-20260308-212056",
+  "generated_at": "2026-03-08T21:20:56.214038+00:00",
+  "severity": "HIGH",
+  "overall_status": "FAIL",
+  "deployment": {
+    "total_boards": 3,
+    "successful": 3,
+    "failed": 0,
+    "failed_boards": {}
+  },
+  "validation": {
+    "result": "FAIL",
+    "total_checks": 10,
+    "passed": 4,
+    "failed": 6,
+    "failures": [
+      {
+        "reading_index": 1,
+        "passed": false,
+        "live": {
+          "mode": "noisy",
+          "sensor": "temp_1",
+          "status": "out_of_range",
+          "timestamp": "2026-03-08T21:18:46Z",
+          "unit": "C",
+          "value": 58.47
+        },
+        "reasons": [
+          "Status mismatch: got out_of_range, expected ok",
+          "Value out of range: 58.47 not in [65, 80]"
+        ]
+      },
+      {
+        "reading_index": 2,
+        "passed": false,
+        "live": {
+          "mode": "noisy",
+          "sensor": "temp_1",
+          "status": "out_of_range",
+          "timestamp": "2026-03-08T21:18:49Z",
+          "unit": "C",
+          "value": 62.14
+        },
+        "reasons": [
+          "Status mismatch: got out_of_range, expected ok",
+          "Value out of range: 62.14 not in [65, 80]"
+        ]
+      },
+      {
+        "reading_index": 5,
+        "passed": false,
+        "live": {
+          "mode": "noisy",
+          "sensor": "temp_1",
+          "status": "out_of_range",
+          "timestamp": "2026-03-08T21:18:55Z",
+          "unit": "C",
+          "value": 60.89
+        },
+        "reasons": [
+          "Status mismatch: got out_of_range, expected ok",
+          "Value out of range: 60.89 not in [65, 80]"
+        ]
+      },
+      {
+        "reading_index": 6,
+        "passed": false,
+        "live": {
+          "mode": "noisy",
+          "sensor": "temp_1",
+          "status": "out_of_range",
+          "timestamp": "2026-03-08T21:18:58Z",
+          "unit": "C",
+          "value": 58.56
+        },
+        "reasons": [
+          "Status mismatch: got out_of_range, expected ok",
+          "Value out of range: 58.56 not in [65, 80]"
+        ]
+      },
+      {
+        "reading_index": 7,
+        "passed": false,
+        "live": {
+          "mode": "noisy",
+          "sensor": "temp_1",
+          "status": "out_of_range",
+          "timestamp": "2026-03-08T21:19:00Z",
+          "unit": "C",
+          "value": 62.71
+        },
+        "reasons": [
+          "Status mismatch: got out_of_range, expected ok",
+          "Value out of range: 62.71 not in [65, 80]"
+        ]
+      },
+      {
+        "reading_index": 9,
+        "passed": false,
+        "live": {
+          "mode": "noisy",
+          "sensor": "temp_1",
+          "status": "out_of_range",
+          "timestamp": "2026-03-08T21:19:04Z",
+          "unit": "C",
+          "value": 60.24
+        },
+        "reasons": [
+          "Status mismatch: got out_of_range, expected ok",
+          "Value out of range: 60.24 not in [65, 80]"
+        ]
+      }
+    ]
+  },
+  "recommended_action": "Urgent attention needed. Partial failure detected. Review failed components before proceeding."
+}

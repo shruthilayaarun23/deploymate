@@ -13,53 +13,56 @@
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "ok",
-        "timestamp": "2026-03-08T19:20:53Z",
+        "timestamp": "2026-03-08T21:18:44Z",
         "unit": "C",
-        "value": 72.58
+        "value": 74.72
       },
       "reasons": []
     },
     {
       "reading_index": 1,
-      "passed": true,
-      "live": {
-        "mode": "noisy",
-        "sensor": "temp_1",
-        "status": "ok",
-        "timestamp": "2026-03-08T19:20:55Z",
-        "unit": "C",
-        "value": 69.34
-      },
-      "reasons": []
-    },
-    {
-      "reading_index": 2,
-      "passed": true,
-      "live": {
-        "mode": "noisy",
-        "sensor": "temp_1",
-        "status": "ok",
-        "timestamp": "2026-03-08T19:20:57Z",
-        "unit": "C",
-        "value": 79.17
-      },
-      "reasons": []
-    },
-    {
-      "reading_index": 3,
       "passed": false,
       "live": {
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "out_of_range",
-        "timestamp": "2026-03-08T19:21:00Z",
+        "timestamp": "2026-03-08T21:18:46Z",
         "unit": "C",
-        "value": 57.14
+        "value": 58.47
       },
       "reasons": [
         "Status mismatch: got out_of_range, expected ok",
-        "Value out of range: 57.14 not in [65, 80]"
+        "Value out of range: 58.47 not in [65, 80]"
       ]
+    },
+    {
+      "reading_index": 2,
+      "passed": false,
+      "live": {
+        "mode": "noisy",
+        "sensor": "temp_1",
+        "status": "out_of_range",
+        "timestamp": "2026-03-08T21:18:49Z",
+        "unit": "C",
+        "value": 62.14
+      },
+      "reasons": [
+        "Status mismatch: got out_of_range, expected ok",
+        "Value out of range: 62.14 not in [65, 80]"
+      ]
+    },
+    {
+      "reading_index": 3,
+      "passed": true,
+      "live": {
+        "mode": "noisy",
+        "sensor": "temp_1",
+        "status": "ok",
+        "timestamp": "2026-03-08T21:18:51Z",
+        "unit": "C",
+        "value": 71.69
+      },
+      "reasons": []
     },
     {
       "reading_index": 4,
@@ -68,9 +71,9 @@
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "ok",
-        "timestamp": "2026-03-08T19:21:02Z",
+        "timestamp": "2026-03-08T21:18:53Z",
         "unit": "C",
-        "value": 71.58
+        "value": 69.09
       },
       "reasons": []
     },
@@ -81,13 +84,13 @@
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "out_of_range",
-        "timestamp": "2026-03-08T19:21:04Z",
+        "timestamp": "2026-03-08T21:18:55Z",
         "unit": "C",
-        "value": 83.4
+        "value": 60.89
       },
       "reasons": [
         "Status mismatch: got out_of_range, expected ok",
-        "Value out of range: 83.4 not in [65, 80]"
+        "Value out of range: 60.89 not in [65, 80]"
       ]
     },
     {
@@ -97,13 +100,13 @@
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "out_of_range",
-        "timestamp": "2026-03-08T19:21:06Z",
+        "timestamp": "2026-03-08T21:18:58Z",
         "unit": "C",
-        "value": 86.96
+        "value": 58.56
       },
       "reasons": [
         "Status mismatch: got out_of_range, expected ok",
-        "Value out of range: 86.96 not in [65, 80]"
+        "Value out of range: 58.56 not in [65, 80]"
       ]
     },
     {
@@ -113,30 +116,27 @@
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "out_of_range",
-        "timestamp": "2026-03-08T19:21:09Z",
+        "timestamp": "2026-03-08T21:19:00Z",
         "unit": "C",
-        "value": 85.21
+        "value": 62.71
       },
       "reasons": [
         "Status mismatch: got out_of_range, expected ok",
-        "Value out of range: 85.21 not in [65, 80]"
+        "Value out of range: 62.71 not in [65, 80]"
       ]
     },
     {
       "reading_index": 8,
-      "passed": false,
+      "passed": true,
       "live": {
         "mode": "noisy",
         "sensor": "temp_1",
-        "status": "out_of_range",
-        "timestamp": "2026-03-08T19:21:11Z",
+        "status": "ok",
+        "timestamp": "2026-03-08T21:19:02Z",
         "unit": "C",
-        "value": 57.84
+        "value": 66.88
       },
-      "reasons": [
-        "Status mismatch: got out_of_range, expected ok",
-        "Value out of range: 57.84 not in [65, 80]"
-      ]
+      "reasons": []
     },
     {
       "reading_index": 9,
@@ -145,13 +145,13 @@
         "mode": "noisy",
         "sensor": "temp_1",
         "status": "out_of_range",
-        "timestamp": "2026-03-08T19:21:13Z",
+        "timestamp": "2026-03-08T21:19:04Z",
         "unit": "C",
-        "value": 62.42
+        "value": 60.24
       },
       "reasons": [
         "Status mismatch: got out_of_range, expected ok",
-        "Value out of range: 62.42 not in [65, 80]"
+        "Value out of range: 60.24 not in [65, 80]"
       ]
     }
   ]
