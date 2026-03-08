@@ -1,0 +1,87 @@
+{
+  "readings": [
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:12:56Z",
+      "unit": "C",
+      "value": 71.51
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:12:58Z",
+      "unit": "C",
+      "value": 72.03
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:00Z",
+      "unit": "C",
+      "value": 71.81
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:02Z",
+      "unit": "C",
+      "value": 72.8
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:04Z",
+      "unit": "C",
+      "value": 71.38
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:06Z",
+      "unit": "C",
+      "value": 71.0
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:08Z",
+      "unit": "C",
+      "value": 72.65
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:10Z",
+      "unit": "C",
+      "value": 72.22
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:12Z",
+      "unit": "C",
+      "value": 72.38
+    },
+    {
+      "mode": "normal",
+      "sensor": "temp_1",
+      "status": "ok",
+      "timestamp": "2026-03-08T19:13:14Z",
+      "unit": "C",
+      "value": 71.15
+    }
+  ],
+  "expected_status": "ok",
+  "min_value": 65,
+  "max_value": 80
+}
