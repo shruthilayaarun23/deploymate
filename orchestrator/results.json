@@ -1,0 +1,9 @@
+{
+  "board-1": {
+    "status": "SUCCESS",
+    "start_time": "2026-03-08T19:43:39.015110+00:00",
+    "end_time": "2026-03-08T19:43:39.015121+00:00",
+    "logs": "Deploying...\nDone",
+    "exit_code": 0
+  }
+}
