@@ -1,7 +1,11 @@
 import json
 import os
 from datetime import datetime, timezone
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
 from metrics import push_metrics
+
 from dotenv import load_dotenv
 load_dotenv()
 
