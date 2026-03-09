@@ -22,7 +22,10 @@ def deploy_to_board(board_name, results):
         )
 
         exit_code = container.wait()["StatusCode"]
-        logs = container.logs().decode("utf-8").strip()
+        try:
+          logs = container.logs().decode("utf-8").strip()
+        except Exception:
+          logs = "logs unavailable"
 
         if exit_code == 0:
             results[board_name] = {

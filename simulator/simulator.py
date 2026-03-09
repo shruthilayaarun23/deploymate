@@ -11,7 +11,7 @@ def get_reading():
     if MODE == "normal":
         return round(base + random.uniform(-1, 1), 2)
     elif MODE == "noisy":
-        return round(base + random.uniform(-15, 15), 2)
+        return round(base + random.choice([-1, 1]) * random.uniform(20, 40), 2)
     elif MODE == "out_of_range":
         return round(base + random.uniform(50, 100), 2)
     elif MODE == "timeout":

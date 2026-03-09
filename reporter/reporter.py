@@ -1,6 +1,9 @@
 import json
 import os
 from datetime import datetime, timezone
+from metrics import push_metrics
+from dotenv import load_dotenv
+load_dotenv()
 
 def load_json(path):
     with open(path, "r") as f:
@@ -79,3 +82,4 @@ if __name__ == "__main__":
     report = generate_report(orchestrator_results, validator_report)
     print_summary(report)
     save_report(report)
+    push_metrics(report)
