@@ -54,7 +54,7 @@ run.py              End-to-end pipeline runner
 
 Live metrics pushed on every pipeline run, visualized in real time.
 
-![Deploymate Datadog Dashboard](assets/dashboard.png)
+![Deploymate Datadog Dashboard](assets/dashbaord.png)
 
 | Metric                       | Description                   |
 |------------------------------|-------------------------------|
