@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="white"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A1A1A">Deploymate</text>
+
+  <!-- ── GROUP LABELS ── -->
+  <text x="120" y="80" text-anchor="middle" font-size="12" fill="#555">Input</text>
+  <text x="450" y="80" text-anchor="middle" font-size="12" fill="#555">Core Pipeline</text>
+  <text x="780" y="80" text-anchor="middle" font-size="12" fill="#555">Output</text>
+
+  <!-- Group divider lines -->
+  <line x1="240" y1="65" x2="240" y2="640" stroke="#DDD" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="660" y1="65" x2="660" y2="640" stroke="#DDD" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- INPUT COLUMN -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Simulator box -->
+  <rect x="30" y="140" width="180" height="80" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="120" y="172" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Simulator</text>
+  <text x="120" y="190" text-anchor="middle" font-size="10" fill="#555">Flask · GET /reading</text>
+  <text x="120" y="206" text-anchor="middle" font-size="10" fill="#555">GET /health</text>
+
+  <!-- Fault modes box -->
+  <rect x="30" y="340" width="180" height="100" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="120" y="365" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Fault Modes</text>
+  <text x="120" y="384" text-anchor="middle" font-size="10" fill="#555">normal</text>
+  <text x="120" y="400" text-anchor="middle" font-size="10" fill="#555">noisy</text>
+  <text x="120" y="416" text-anchor="middle" font-size="10" fill="#555">out_of_range · timeout</text>
+
+  <!-- Fault modes → Simulator -->
+  <line x1="120" y1="340" x2="120" y2="220" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <text x="132" y="285" font-size="9" fill="#888">--mode flag</text>
+
+  <!-- Golden File box -->
+  <rect x="30" y="500" width="180" height="80" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="120" y="532" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Golden File</text>
+  <text x="120" y="550" text-anchor="middle" font-size="10" fill="#555">golden.json</text>
+  <text x="120" y="566" text-anchor="middle" font-size="10" fill="#555">known-good baseline</text>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- CORE PIPELINE COLUMN -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Validator box -->
+  <rect x="270" y="115" width="180" height="80" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="360" y="147" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Validator</text>
+  <text x="360" y="165" text-anchor="middle" font-size="10" fill="#555">10 readings vs baseline</text>
+  <text x="360" y="181" text-anchor="middle" font-size="10" fill="#555">→ report.json</text>
+
+  <!-- Orchestrator box -->
+  <rect x="270" y="320" width="180" height="100" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="360" y="350" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Orchestrator</text>
+  <text x="360" y="368" text-anchor="middle" font-size="10" fill="#555">3 concurrent threads</text>
+  <text x="360" y="384" text-anchor="middle" font-size="10" fill="#555">IDLE → IN_PROGRESS</text>
+  <text x="360" y="400" text-anchor="middle" font-size="10" fill="#555">SUCCESS | FAILURE</text>
+  <text x="360" y="416" text-anchor="middle" font-size="10" fill="#555">→ results.json</text>
+
+  <!-- Docker Targets box -->
+  <rect x="270" y="500" width="180" height="80" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="360" y="532" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Docker Targets</text>
+  <text x="360" y="550" text-anchor="middle" font-size="10" fill="#555">board-1  board-2  board-3</text>
+  <text x="360" y="566" text-anchor="middle" font-size="10" fill="#555">Alpine Linux containers</text>
+
+  <!-- Reporter box (center, larger) -->
+  <rect x="480" y="275" width="160" height="100" rx="4" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="560" y="307" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1A1A">Reporter</text>
+  <text x="560" y="327" text-anchor="middle" font-size="10" fill="#555">Aggregates results</text>
+  <text x="560" y="343" text-anchor="middle" font-size="10" fill="#555">Scores severity</text>
+  <text x="560" y="359" text-anchor="middle" font-size="10" fill="#555">LOW · HIGH · CRITICAL</text>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- OUTPUT COLUMN -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Failure Report box -->
+  <rect x="690" y="140" width="180" height="80" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="780" y="172" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Failure Report</text>
+  <text x="780" y="190" text-anchor="middle" font-size="10" fill="#555">failure_report.json</text>
+  <text x="780" y="206" text-anchor="middle" font-size="10" fill="#555">structured · timestamped</text>
+
+  <!-- Datadog box -->
+  <rect x="690" y="360" width="180" height="100" rx="4" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="780" y="392" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">Datadog</text>
+  <text x="780" y="412" text-anchor="middle" font-size="10" fill="#555">boards.total</text>
+  <text x="780" y="428" text-anchor="middle" font-size="10" fill="#555">boards.success · failed</text>
+  <text x="780" y="444" text-anchor="middle" font-size="10" fill="#555">severity.score</text>
+
+
+
+  <!-- ══════════════════════════════════ -->
+  <!-- CONNECTION LINES -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Simulator → Validator -->
+  <line x1="210" y1="180" x2="270" y2="155" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="218" y="160" width="44" height="16" rx="3" fill="white"/>
+  <text x="240" y="172" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">HTTP</text>
+
+  <!-- Golden File → Validator -->
+  <line x1="210" y1="540" x2="250" y2="540" stroke="#333" stroke-width="1.5"/>
+  <line x1="250" y1="540" x2="250" y2="155" stroke="#333" stroke-width="1.5"/>
+  <line x1="250" y1="155" x2="270" y2="155" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="218" y="522" width="54" height="16" rx="3" fill="white"/>
+  <text x="245" y="534" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">baseline</text>
+
+  <!-- Validator → Reporter -->
+  <line x1="450" y1="195" x2="500" y2="275" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="450" y="222" width="72" height="16" rx="3" fill="white"/>
+  <text x="486" y="234" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">report.json</text>
+
+  <!-- Orchestrator → Reporter -->
+  <line x1="450" y1="355" x2="480" y2="340" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="448" y="340" width="72" height="16" rx="3" fill="white"/>
+  <text x="484" y="352" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">results.json</text>
+
+  <!-- Docker → Orchestrator -->
+  <line x1="360" y1="500" x2="360" y2="420" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="320" y="452" width="64" height="16" rx="3" fill="white"/>
+  <text x="352" y="464" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">deploys to</text>
+
+  <!-- Reporter → Failure Report -->
+  <line x1="640" y1="305" x2="690" y2="220" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="634" y="254" width="56" height="16" rx="3" fill="white"/>
+  <text x="662" y="266" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">generates</text>
+
+  <!-- Reporter → Datadog -->
+  <line x1="640" y1="345" x2="690" y2="375" stroke="#333" stroke-width="1.5" marker-end="url(#arrowBlack)"/>
+  <rect x="638" y="352" width="50" height="16" rx="3" fill="white"/>
+  <text x="663" y="364" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">metrics</text>
+
+  <!-- ── ARROW MARKER ── -->
+  <defs>
+    <marker id="arrowBlack" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
+</svg>
