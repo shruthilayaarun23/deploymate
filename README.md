@@ -7,6 +7,8 @@ and automatically surfaces failures with full observability through Datadog.
 
 ## Architecture
 ```
+![Deploymate Architecture](assets/architecture.svg)
+
 simulator/          Signal emitter with configurable fault modes
     simulator.py    Flask app exposing /reading and /health endpoints
 
